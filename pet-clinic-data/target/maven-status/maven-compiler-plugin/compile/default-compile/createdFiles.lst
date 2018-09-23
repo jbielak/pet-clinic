@@ -1,0 +1,5 @@
+com\jbielak\petclinic\model\Person.class
+com\jbielak\petclinic\model\PetType.class
+com\jbielak\petclinic\model\Owner.class
+com\jbielak\petclinic\model\Vet.class
+com\jbielak\petclinic\model\Pet.class
