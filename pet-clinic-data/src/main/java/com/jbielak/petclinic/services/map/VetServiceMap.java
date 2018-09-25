@@ -1,12 +1,12 @@
 package com.jbielak.petclinic.services.map;
 
 import com.jbielak.petclinic.model.Vet;
-import com.jbielak.petclinic.services.CrudService;
+import com.jbielak.petclinic.services.VetService;
 
 import java.util.Set;
 
 public class VetServiceMap extends AbstractMapService<Vet, Long>
-        implements CrudService<Vet, Long> {
+        implements VetService {
 
     @Override
     public Set<Vet> findAll() {
