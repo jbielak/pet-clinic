@@ -2,9 +2,11 @@ package com.jbielak.petclinic.services.map;
 
 import com.jbielak.petclinic.model.Vet;
 import com.jbielak.petclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetServiceMap extends AbstractMapService<Vet, Long>
         implements VetService {
 
