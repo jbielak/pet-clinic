@@ -2,7 +2,6 @@ package com.jbielak.petclinic.services.map;
 
 import com.jbielak.petclinic.model.Owner;
 import com.jbielak.petclinic.model.Pet;
-import com.jbielak.petclinic.model.PetType;
 import com.jbielak.petclinic.services.OwnerService;
 import com.jbielak.petclinic.services.PetService;
 import com.jbielak.petclinic.services.PetTypeService;
@@ -36,7 +35,7 @@ public class OwnerMapService extends AbstractMapService<Owner, Long>
 
     @Override
     public Owner save(Owner object) {
-        Owner savedOwner = null;
+
         if (object != null) {
             if (object.getPets() != null) {
                 object.getPets().forEach(pet -> {
@@ -73,6 +72,10 @@ public class OwnerMapService extends AbstractMapService<Owner, Long>
 
     @Override
     public Owner findByLastName(String lastName) {
-        return null;
+        return this.findAll()
+                .stream()
+                .filter(owner -> owner.getLastName().equalsIgnoreCase(lastName))
+                .findFirst()
+                .orElse(null);
     }
 }
