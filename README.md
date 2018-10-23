@@ -1,4 +1,7 @@
+[![CircleCI](https://circleci.com/gh/jbielak/pet-clinic.svg?style=svg)](https://circleci.com/gh/jbielak/pet-clinic)
+
 # pet-clinic
+
 Spring Boot web application based on Spring Pet Clinic.
 Application helps to manage a pet clinic (set up visits, preview vets, pets).
 
